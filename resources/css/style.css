@@ -19,7 +19,7 @@ hr {
   margin-top: 12px;
 margin-bottom: 12px;
 border: 0;
-border-top: 1px solid purple;
+border-top: 1px solid #50266a;
 }
 .grid {
   margin-top: 5em;
@@ -57,7 +57,7 @@ border-top: 1px solid purple;
 
 .status {
   grid-area: status;
-  background-color: purple;
+  background-color: #50266a;
 }
 
 /* LINK BUTTONS */
@@ -92,6 +92,39 @@ transform: scale(1.02);
   color: white;
 }
 
+/* COUNTDOWN STATUS */
+
+.status {
+  height: 100%;
+  width: auto;
+  padding: 0.8em;
+}
+
+.status p {
+  text-align: center;
+  margin: 0.2em;
+  padding: 0;
+  color: white;
+}
+
+#count-message {
+  display: block;
+  font-size: 2.4em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em 0.5em 0 0.5em;
+  color: white;
+  text-align: center;
+}
+
+#countdown {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+      text-align: center;
+      padding:0;
+}
 /* CONTENT SECTION */
 
 .content-card {
@@ -136,7 +169,7 @@ transform: scale(1.02);
 .mini-tab {
   padding: 0.3em;
   font-size: 1.1em;
-  background-color: purple;
+  background-color: #50266a;
   color: white;
   margin: 0 0.5em;
 }
@@ -171,7 +204,7 @@ transform: scale(1.02);
 }
 
 .side-info{
-  border: 4px solid purple;
+  border: 4px solid #50266a;
   border-radius: 3em;
   padding: 1em;
   margin: 1em 0;
@@ -184,7 +217,7 @@ transform: scale(1.02);
 
 .mini-tab-active {
   background-color: white;
-  color: purple;
+  color: #50266a;
   z-index: 10;
 }
 
@@ -200,21 +233,21 @@ transform: scale(1.02);
 /* POSITION BOXES */
 .position-box:nth-of-type(odd){
   background-color: white;
-  color: purple;
-  border: 4px solid purple;
+  color: #50266a;
+  border: 4px solid #50266a;
 }
 .position-box:nth-of-type(odd):hover {
-  background-color: purple;
+  background-color: #50266a;
   color: white;
 }
 .position-box:nth-of-type(even){
-  background-color: purple;
+  background-color: #50266a;
   color: white;
 }
 .position-box:nth-of-type(even):hover{
   background-color: white;
-  color: purple;
-  border: 4px solid purple;
+  color: #50266a;
+  border: 4px solid #50266a;
 }
 
 #default-mini-tab {

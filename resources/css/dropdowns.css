@@ -9,7 +9,7 @@
 
 .faq:hover {
   cursor: pointer;
-  background-color: purple;
+  background-color: #50266a;
   color: white;
 }
 
@@ -17,7 +17,7 @@
 .faq-symbol {
   width: 7em;
   color: white;
-  background-color: teal;
+  background-color: #61beb1;
   padding: 0 0.6em;
   height: 100%;
 }
@@ -30,7 +30,7 @@
 .fa-plus, .fa-minus {
   font-size: 3em;
   color: white;
-  background-color: teal;
+  background-color: #61beb1;
   padding: 0.5em;
 
 }
@@ -50,7 +50,7 @@
 }
 
 .active-fq {
-  background-color: purple;
+  background-color: #50266a;
   color: white;
 }
 
