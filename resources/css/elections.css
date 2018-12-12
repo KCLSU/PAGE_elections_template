@@ -1,0 +1,74 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+}
+.election .msl-election-positions {
+    	background-repeat: no-repeat;
+    	background-image: none;
+}
+.election [class*="times"] {
+        background-image: none;
+    	background-repeat: no-repeat;
+}
+.election .msl-election-positions:before {
+    .fa-icon();
+    content: "\f005";  padding: 0px 5px 0px 10px; font-family: FontAwesome;
+}
+.election .msl-election-polltimes:before {
+    .fa-icon();
+    content: "\f017";  padding: 0px 5px 0px 10px; font-family: FontAwesome;
+}
+.election .msl-election-nomtimes:before {
+    .fa-icon();
+    content: "\f017";  padding: 0px 5px 0px 10px; font-family: FontAwesome;
+}
+.votenow {
+	color:#5ebdb0 !important;
+	border: #5ebdb0 !important;
+	font-weight: bold !important;
+}
+#ctl00_spring2017_rptElections_ctl00_lnkVote {
+	color:#5ebdb0 !important;
+	border: #5ebdb0 !important;
+	font-weight: bold !important;
+}
+.boxed {
+  border: 1px solid green ;
+}
+.borderexample {
+	border-style:solid;
+	border-color:#287EC7;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.electionbutton1 {
+	background-color: #e65928;
+	padding: 15px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}

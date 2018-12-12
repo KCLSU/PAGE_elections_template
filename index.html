@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elections page</title>
+    <link href="./resources/css/kclsu_style.css" type= "text/css" rel="stylesheet">
+    <link href="./resources/css/dcstyles.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/elections.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/dropdowns.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  </head>
+
+
+  <body>
+
+
+<!--NAV -->
+
+            <nav class="navbar navbar-inverse sticky fixed" id="stickynav">
+                  <div class="container">
+                    <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a href="https://www.kclsu.org/" class="navbar-left"><img src="./resources/images/kclsu-menu-logo.png"></a>
+                      </div>
+                      <div id="navbar" class="navbar-collapse collapse">
+
+                        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/about/kclsu/">About Us</a></li>
+                    <li><a href="/about/ourimpact/">Our Impact</a></li>
+                    <li><a href="/about/studentofficers/">Our Student Officers</a></li>
+                    <li><a href="/about/ourpeople/">Our People</a></li>
+                    <li><a href="/about/building/">Building A Better Union</a></li>
+                    <li><a href="/about/contactus/">Contact Us</a></li>
+                    <li><a href="/about/workforus/">Work With Us</a></li>
+                    <li><a href="/about/advertise/">Advertise With Us</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Advice</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/advice/">What is KCLSU Advice?</a></li>
+                    <li><a href="/advice/adviceservice/">Using our Advice Service</a></li>
+                    <li><a href="/advice/complaints/">Complaints</a></li>
+                    <li><a href="/advice/examsupport/">Exam Support</a></li>
+                    <li><a href="/advice/othersupport/">Other Support Services</a></li>
+                    <li><a href="/advice/advicevolunteer/">McKenzie Friend Volunteers</a></li>
+                    <li><a href="/advice/ucustrikesadviceteamupdates/">UCU Strike Advice</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Get Involved</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/getinvolved/sport/">Sports Clubs</a></li>
+                    <li><a href="/getinvolved/societies/">Student Activity Groups</a></li>
+                    <li><a href="/getinvolved/studentmedia/">Student Media</a></li>
+                    <li><a href="/getinvolved/volunteering/">Volunteering & Fundraising</a></li>
+                    <li><a href="/getinvolved/wideningparticipation/">Widening Participation</a></li>
+                    <li><a href="/getinvolved/wellbeing/">Wellbeing</a></li>
+                    <li><a href="/getinvolved/bookaroom/">Room Bookings</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Make a Difference</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/representingyou/uniondevelopment/">Union Development</a></li>
+                    <li><a href="/representingyou/campaigns/">Campaigns</a></li>
+                    <li><a href="/representingyou/studentreps/">Student Reps</a></li>
+                    <li><a href="/representingyou/liberation/">Associations</a></li>
+                    <li><a href="/representingyou/Elections">Elections</a></li>
+                    <li><a href="/representingyou/agm/">AGM</a></li>
+                    <li><a href="/representingyou/nus/">NUS Conference</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Events</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/events/">All Events</a></li>
+                    <li><a href="/events/kclsuevents/">KCLSU Events</a></li>
+                    <li><a href="/events/studentrunevents/">Student Run Events</a></li>
+                    <li><a href="https://www.kclsu.org/events/nyns/">New Year, new start</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Food & Drink</a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://www.kclsu.org/foodanddrink/">KCLSU Bars Restaurants & Cafes</a></li>
+                    <li><a href="https://www.kclsu.org/foodanddrink/guysbar/">Guys Bar</a></li>
+                    <li><a href="https://www.kclsu.org/foodanddrink/waterfront/">Waterfront Bar & Kitchen</a></li>
+                    <li><a href="https://www.kclsu.org/foodanddrink/philosophybar/">Philosophy Bar</a></li>
+                    <li><a href="https://www.kclsu.org/foodanddrink/theshed/">Shed</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Shop</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/shop/">Union Shop</a></li>
+                    <li><a href="/shop/nusextra/">NUS Extra</a></li>
+                    <li><a href="/studentdeals/">Student Deals</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span></a>
+                            <ul class="dropdown-menu serch">
+                              <li><MSL:Search /></li>
+                        </ul>
+            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle js-basket" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-shopping-cart"></span>&ensp;<span class="admin-label">Basket</span> <span class="blah"></span></a>
+                            <ul class="dropdown-menu">
+                           <li><MSL:Basket /></li>
+
+                        </ul>
+                        <li>
+                            <a href="/login/">Login <span class="glyphicon glyphicon-user"></span></a>
+                            </li>
+                    </div><!--/.navbar-collapse -->
+                  </div>
+                </nav>
+
+
+<!--ELECTIONS CONTAINER-->
+
+<div class="grid">
+  <div class="header flex-center-center">
+    <img class="dc-image" src="./resources/images/elections.PNG"></img>
+  </div>
+  <div class="status"></div>
+  <div class="links">
+    <div class="links-container">
+      <a class="tab-button" id="default-tab" onclick="openTab(event, 'about')"> About Elections </a>
+      <a class="tab-button" onclick="openTab(event, 'positions')"> The Positions </a>
+      <a class="tab-button heartbeat" id="nominate" onclick="openTab(event, 'action')"> Nominate Yourself </a>
+      <a class="tab-button" onclick="openTab(event, 'useful')"> Useful Links </a>
+      <a class="tab-button" onclick="openTab(event, 'complaints')"> Complaints and Contact Us</a>
+      <a class="tab-button" onclick="openTab(event, 'timeline')"> Timeline</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content-card">
+
+<!-- ABOUT ELECTIONS -->
+      <div id="about" class="tab-section">
+        <div class="flex-between-center tab-section-header">
+          <div></div>
+          <hr />
+          <h3> About </h3>
+        </div>
+        <div class="flex-center-center">
+          <div class="text-container">
+            <h1>Spring Elections 2019 </h1>
+            <p> KCLSU is a democratic charity led by students. Our elected student leaders work to ensure a wide cross-section of views are represented in decision making within the Union and at King’s and help to unite the various student communities around common causes.</p>
+            <p>The Spring Elections sees King’s students stand and vote for the Student Officer, Association Officer, NUS Delegate and Academic Rep positions. These leaders work within their respective roles, groups and as a collective to make a real impact on their communities.</p>
+          </div>
+          <div class="image-container">
+            <img class="dc-image" src="./resources/images/elections.jpg">
+          </div>
+      </div>
+      <div class="groups-pics flex-center-center">
+        <img class="dc-image" src="./resources/images/mock1.jpg">
+        <img class="dc-image" src="./resources/images/mock2.jpg">
+        <img class="dc-image" src="./resources/images/mock3.jpg">
+      </div>
+    </div>
+
+
+<!-- THE POSITIONS -->
+      <div id="positions" class="tab-section">
+        <div class="flex-between-center tab-section-header">
+          <div class="flex-center-center">
+            <span class="tab-button mini-tab" onclick="openMiniTab(event, 'default-mini-tab')"> All Positions </span>
+            <span class="tab-button mini-tab" onclick="openMiniTab(event, 'officers')"> Student Officers </span>
+            <span class="tab-button mini-tab" onclick="openMiniTab(event, 'networks')"> Network Officers </span>
+            <span class="tab-button mini-tab" onclick="openMiniTab(event, 'delegates')"> NUS National Conference Delegates</span>
+            <span class="tab-button mini-tab" onclick="openMiniTab(event, 'academic')"> Academic Reps</span>
+          </div>
+          <hr />
+          <h3> The Positions </h3>
+        </div>
+
+        <div class="flex-center-center flex-column" id="default-mini-tab">
+            <h2> Available Positions </h2>
+            <p> These are the types of student positions available in this year's Spring Elections 2019. </p>
+          <!-- STUDENT POSITION BOX BUTTONS -->
+            <div class="flex-center-center flex-wrap">
+              <div onclick="openMiniTab(event, 'officers')" class="position-box flex-center-center"> Student Officers</div>
+              <div  onclick="openMiniTab(event, 'networks')" class="position-box flex-center-center"> Network Officers</div>
+              <div onclick="openMiniTab(event, 'delegates')" class="position-box flex-center-center"> NUS National Conference Delegates</div>
+              <div onclick="openMiniTab(event, 'academic')" class="position-box flex-center-center">Academic Reps</div>
+            </div>
+        </div>
+        <div class="mini-tab-section" id="officers">
+
+  <!-- STUDENT OFFICERS INFO -->
+          <div class="flex-center-center">
+            <div class="text-container">
+              <p>Student Officers lead KCLSU and sit on the KCLSU Board of Trustees, the highest level of decision-making within the Union. The Student Officer roles are full-time, paid positions; applicants who are not currently in their final year will take a sabbatical year.</p>
+              <p>Please note that you cannot stand for multiple student officer positions in one election. You can stand for a student officer position and an association officer position, but in the event that you win both, you will have to withdraw from one. </p>
+              <p><strong style="color: rgb(80, 38, 105); font-family: bree_serifsemibold; font-size: 24px;"><a id="What you'll do" name="What you'll do"></a>What Student Officers do</strong></p>
+              <ul>
+                <li>Engage with King&rsquo;s students</li>
+                <li>Build student communities</li>
+                <li>Amplify student voices</li>
+                <li>Empower student-led campaigning</li>
+                <li>Develop a student-led Union</li>
+                <li>Be a <a href="/pageassets/elections/studentofficers/KCLSU-Trustee-Code-of-Conduct.pdf">Trustee </a>of KCLSU</li>
+              </ul>
+
+            </div>
+            <div class="image-container flex-center-center flex-column">
+              <div class="side-info">
+                <h3> Quick Facts </h3>
+                <ul>
+                  <li>Engage with King&rsquo;s students</li>
+                  <li>Build student communities</li>
+                  <li>Amplify student voices Amplify student voices Amplify student voices</li>
+                  <li>Empower student-led campaigning</li>
+                </ul>
+              </div>
+              <div class="button-container flex-column position-button">
+                  <a class="dc-button" href="https://www.nus.org.uk"> More information </a>
+              </div>
+            </div>
+        </div>
+
+        </div>
+  <!-- NETWORK OFFICERS INFO -->
+        <div class="mini-tab-section" id="networks">
+          <div class="flex-center-center">
+            <div class="text-container">
+              <h2 style="text-align: center"> Network Officers </h2>
+              <p>KCLSU networks are where we come together to build active and supportive student-led communities, that organise to represent themselves and work together to meet their community’s needs.</p>
+              <p>Network officers work with their committees to represent students on a voluntary, part-time basis and collaborate with the college, as well as taking student views to a national level with NUS.</p>
+              <h3>What network officers do</h3>
+              <ul>
+                <li>Build communities</li>
+                <li>Challenge discrimination</li>
+                <li>Promote liberation at King’s</li>
+                <li>Be a member of the KCLSU Welfare and Inclusion Committee</li>
+                <li>Attend relevant college committees</li>
+              </ul>
+              <p>The Mature Students' Officer will lead the Mature Students’ Network and must be a mature student. A mature student is any student who started their first degree over the age of 21.</p>
+            </div>
+            <div class="image-container flex-center-center flex-column">
+              <div class="side-info">
+                <h3> Quick Facts </h3>
+                <ul>
+                  <li>Build communities</li>
+                  <li>Challenge discrimination</li>
+                  <li>Promote liberation at King’s</li>
+                  <li>Be a member of the KCLSU Welfare and Inclusion Committee</li>
+                  <li>Attend relevant college committees</li>
+                </ul>
+              </div>
+              <div class="button-container flex-column position-button">
+                  <a class="dc-button" href="https://www.nus.org.uk"> More information </a>
+              </div>
+            </div>
+        </div>
+        </div>
+
+  <!-- NATIONAL CONFERENCE DLEGATES INFO -->
+        <div class="mini-tab-section" id="delegates">
+          <div class="flex-center-center">
+            <div class="text-container">
+              <h2 style="text-align:center"> National Conference Delegates </h2>
+              <p>NUS (National Union of Students) is a confederation of student unions in the UK. Being affiliated with NUS means that as a union, we can create policy and campaign on a national level. </p>
+              <p>National Conference is the biggest event in the NUS year - every year, around 1000 delegates will attend the event in Brighton.&nbsp;<a href="https://www.kclsu.org/representingyou/nus/">NUS Conferences</a> are the lead decision making bodies of the organisation where delegates representing students from across NUS membership review the work over the last year, decide on priorities and policy for the following year and elect the leadership.</p>
+              <p>NUS National Conference Delegates represent King&rsquo;s students at the NUS National Conference and help shape the national conversation.</p>
+              <h3><strong style="color: rgb(80, 38, 105); font-family: bree_serifsemibold; font-size: 24px;"><a id="What you'll do" name="What you'll do"></a>What NUS National Conference Delegates do</strong></h3>
+
+              <ul>
+              	<li>Join the national conversation&nbsp;</li>
+              	<li>Discuss, defend and vote on motions to help decide NUS Policy</li>
+              	<li>Vote for NUS student leadership positions, including full-time NUS Officers</li>
+              	<li>Hear from the NUS Officers about national initiatives and campaigns</li>
+              	<li>Update King&rsquo;s communities following the conference</li>
+              </ul>
+              <p>There are 6 NUS National Conference Delegate positions available. 3 of these are reserved for candidates who self-define as women, so please be sure to fill in the &#39;Profile&#39; section when nominating yourself.&nbsp;</p>
+
+            </div>
+            <div class="image-container flex-center-center flex-column">
+              <div class="side-info">
+                <h3> Quick Facts </h3>
+                <ul>
+                	<li>Join the national conversation&nbsp;</li>
+                	<li>Discuss, defend and vote on motions to help decide NUS Policy</li>
+                	<li>Vote for NUS student leadership positions, including full-time NUS Officers</li>
+                	<li>Hear from the NUS Officers about national initiatives and campaigns</li>
+                	<li>Update King&rsquo;s communities following the conference</li>
+                </ul>
+              </div>
+              <div class="button-container flex-column position-button">
+                <a class="dc-button" href="https://www.nus.org.uk"> More information </a>
+                <a class="dc-button" href="https://www.kclsu.org/representingyou/nus/nusconference/">NUS Conference</a>
+                <a class="dc-button" href="https://www.kclsu.org/representingyou/nus/nusconference/">NUS National Conference Delegates</a>
+                <a class="dc-button" href="https://www.kclsu.org/pageassets/elections/handbooks/NUS-delegate-handbook(1).pdf">NUS Delegate Handbook</a>
+              </div>
+            </div>
+        </div>
+        </div>
+
+<!-- ACADEMIC REPS INFO -->
+        <div class="mini-tab-section" id="academic">
+          <div class="flex-center-center">
+            <div class="text-container">
+              <h2 style="text-align: center"> Academic Represenatives </h2>
+              <p>Academic Reps empower peers to act collectively to improve the student experience at a faculty, department or programme level. Position holders work collaboratively with reps across the university to bring about change. </p>
+
+              <!-- ACADEMIC DROP DOWNS -->
+
+              <!-- DROP DOWN 0 -->
+              <div class="faq flex-between-center" onclick="openFaq(event, 'departments')">
+                <p class="faq-question"> Departments running elections</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="faq-answer" id="departments">
+                <p>The following departments are running elections through KCLSU:&nbsp;</p>
+                <ul>
+                	<li>Arts &amp; Humanities (A&amp;H)</li>
+                	<li>King&#39;s Business School</li>
+                	<li>Institute of Psychiatry,&nbsp;Psychology and Neuroscience (IoPPN)
+                	<ul>
+                		<li>Psychology and Neuroscience of Mental Health (PNoMH)</li>
+                		<li>Applied Neuroscience</li>
+                	</ul>
+                	</li>
+                	<li>Law</li>
+                	<li>Life Sciences &amp; Medicine
+                	<ul>
+                		<li>Bioscience - First Year Reps Only<br />
+                		<strong><em>If you&#39;re in your 2nd, 3rd, 4th year of study or a PG student and would like to be an academic rep please contact sarah.tattam@kcl.ac.uk, (Faculty Student Experience Manager)&nbsp;expressing your interest.</em></strong></li>
+                		<li>
+                		<p>Medical Students&#39; Association (MSA)</p>
+                		</li>
+                	</ul>
+                	</li>
+                	<li>Natural &amp; Mathematical Sciences
+                	<ul>
+                		<li>Informatics</li>
+                	</ul>
+                	</li>
+                	<li>Social Science &amp; Public Policy
+                	<ul>
+                		<li>School of Security Studies</li>
+                		<li>School of Politics &amp; Economics</li>
+                	</ul>
+                	</li>
+                </ul>
+              </div>
+
+              <!-- DROP DOWN 1 -->
+              <div class="faq flex-between-center" onclick="openFaq(event, 'academics')">
+                <p class="faq-question"> What Academic Reps do</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="faq-answer" id="academics">
+                <ul>
+                	<li>Engage peers to find out what issues affect them and propose changes to your faculty, department or programme</li>
+                	<li>Build partnerships between students, KCLSU, King&rsquo;s and external bodies with a view to improving the student experience</li>
+                	<li>Attend student-staff liaison committees (SSLCs),&nbsp;faculty or college committee meetings or send a nominee</li>
+                	<li>Feedback&nbsp;decisions to the communities they represent</li>
+                </ul>
+              </div>
+
+              <!-- DROP DOWN 2 -->
+              <div class="faq flex-between-center" onclick="openFaq(event, 'sslc')">
+                <p class="faq-question">What SSLC Chairs do</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="faq-answer" id="sslc">
+                <p>Arts and Humanities have student representatives who chair the student-staff liaison committee (SSLC).&nbsp;Student chairs will put together the agenda&nbsp;of the SSLC by collaborating with academic reps and the vice chair, lead the discussions of the meeting and will also work with academic reps to&nbsp;communicate the&nbsp;outcomes from the meetings to students throughout the year:&nbsp;</p>
+                <ul>
+                	<li>
+                	<p>Student Chairs will be supported by an Academic Vice-Chair in all departments.</p>
+                	</li>
+                	<li>
+                	<p>Each departmental SSLC Student Chair will attend the Faculty Student Experience Forum where issues raised at department SSLCs for Faculty level consideration will be discussed.</p>
+                	</li>
+                </ul>
+                <p>For more information on SSLC chairs please see the faculty student voice page&nbsp;<a href="https://www.kcl.ac.uk/artshums/study/handbook/svoice/stureps.aspx">here</a>.</p>
+             </div>
+
+             <!-- DROP DOWN 3 -->
+              <div class="faq flex-between-center" onclick="openFaq(event, 'committee')">
+                <p class="faq-question"> What Committee Reps do</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="faq-answer" id="committee">
+                <p>We are also electing student representatives for faculty and college committees. These representatives ensure that students&#39; experiences, issues, solutions and ideas are heard, and help shape the work of the committee.&nbsp;</p>
+                <p>Committee Reps work with academic associations, academic representatives and KCLSU to effectively represent the communities they belong to whilst on the committee.</p>
+                <p>Committee positions you can nominate yourself for include:</p>
+                <ul>
+                	<li>Academic Board</li>
+                	<li>Digital&nbsp;Education Students Committee</li>
+                	<li>Diversity &amp; Inclusion Committee in the Faculty of Arts &amp; Humanities</li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="image-container flex-center-center flex-column">
+              <div class="side-info">
+                <h3> Quick Facts </h3>
+                <ul>
+                	<li>Academic Board</li>
+                	<li>Digital&nbsp;Education Students Committee</li>
+                	<li>Diversity &amp; Inclusion Committee in the Faculty of Arts &amp; Humanities</li>
+                </ul>
+              </div>
+
+              <div class="button-container flex-column position-button">
+                  <a class="dc-button" href="/representingyou/studentreps"> Learn More </a>
+                  <a class="dc-button" href="/pageassets/elections/handbooks/_Academic-Rep-Handbook-2018-19.pdf"> See the Academic Rep handbook </a>
+                  <a class="dc-button" href="/pageassets/elections/handbooks/_Committee-Reps-Handbook-2018-19.pdf"> See the Committee Rep handbook</a>
+              </div>
+
+            </div>
+        </div>
+
+        </div>
+      </div>
+
+<!-- NOMINATIONS AND VOTING -->
+      <div id="action" class="tab-section">
+        <div class="flex-between-center tab-section-header">
+          <div></div>
+          <hr />
+          <h3> Nominations</h3>
+        </div>
+        <h3> MSL Widget goes here </h3>
+      </div>
+
+
+      <div id="useful" class="tab-section">
+        <div class="flex-between-center tab-section-header">
+          <div></div>
+          <hr />
+          <h3> Useful Links </h3>
+        </div>
+        <div class="flex-center-center flex-column">
+          <h3><a href="/elections/handbooks">Handbooks for each position</a></h3>
+          <p>The&nbsp;handbooks provide&nbsp;useful information&nbsp;about the nominations and elections process, role descriptions, election rules and expenses.&nbsp;</p>
+          <h3><a href="/elections/candidateresources/">Candidate resources</a>&nbsp;</h3>
+          <p>Information and guidance for candidates, as well as the slides and advice from the candidates&#39; briefings.&nbsp;</p>
+          <h3><a href="/elections/eligibilityexplained/">Eligibility terms explained</a>&nbsp;</h3>
+          <p>Some positions might require you to self-define in order to be eligible to stand or vote for them.&nbsp;</p>
+          <h3><a href="/elections/posters">Designated campaign zones&nbsp;</a></h3>
+          <p>Candidates aren&#39;t allowed to put up posters in undesignated KCLSU and King&#39;s spaces. Here you can find the full list of spaces.</p>
+          <h3><a href="/elections/codeofconduct/">Candidates&#39;&nbsp;Code of Conduct</a></h3>
+          <p>Taking part in a KCLSU election means following a code of conduct. Here, you will find the full Code of Conduct</p>
+      </div>
+    </div>
+
+<!-- COMPLIANTS AND CONTACT -->
+      <div id="complaints" class="tab-section">
+        <div class="flex-between-center tab-section-header">
+          <div></div>
+          <hr />
+          <h3> Complaints </h3>
+        </div>
+        <a onclick="nominate()"> Please open Nominate section </a>
+        <h3>Contact <a href="mailto:elections@kclsu.org">elections@kclsu.org</a> for:</h3>
+
+<ul>
+	<li>Problems logging in</li>
+	<li>Problems voting</li>
+	<li>Questions about the elections process</li>
+	<li>Help and guidance</li>
+</ul>
+
+<p>Please provide your K number, full name and KCL email address.</p>
+
+<p>If you&#39;d like to make a complaint, please click through to the&nbsp;<a href="https://www.kclsu.org/elections/electionscomplaints/">Elections Complaints page.</a></p>
+      </div>
+
+
+
+      <div id="timeline" class="tab-section">
+        <div class="flex-between-center tab-section-header">
+          <div></div>
+          <hr />
+          <h3> Timeline </h3>
+        </div>
+        <div class="flex-center-center" id="table">
+          <table border="1" cellpadding="0" cellspacing="0" style="width: 750px;" width="100%">
+          	<tbody>
+          		<tr>
+          			<td style="width: 261px;">
+          			<p><strong>Nominations open</strong></p>
+          			</td>
+          			<td style="width: 353px;">
+          			<p>Monday 28 January 10am</p>
+          			</td>
+          		</tr>
+          		<tr>
+          			<td style="width: 261px;">
+          			<p><strong>Nominations close</strong></p>
+          			</td>
+          			<td style="width: 353px;">
+          			<p>Friday 15 February, noon &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+          			</td>
+          		</tr>
+          		<tr>
+          			<td style="width: 261px;">
+          			<p><strong>Student Officer briefings</strong></p>
+
+          			<p>It is compulsory to attend a briefing in order to stand for the position of Student Officer. If you can&rsquo;t attend any briefing, please email <a href="mailto:elections@kclsu.org">elections@kclsu.org</a> as soon as possible.&nbsp;If you do not attend a briefing you will be disqualified.</p>
+          			</td>
+          			<td style="width: 353px;">
+          			<p>Friday 15 February, 5.30pm-6.30pm, Activity Room D, 8th Floor, Bush House, South East Wing</p>
+
+          			<p>Or</p>
+
+          			<p>Monday 18 February, 12pm-1pm, Activity Room 5, West Wing, Guy&rsquo;s Campus</p>
+          			</td>
+          		</tr>
+          		<tr>
+          			<td style="width: 261px;"><strong>Briefing for Network Officers and NUS Delegates</strong></td>
+          			<td style="width: 353px;">Monday 18 February, 4pm-5pm, Activity Room D, 8th Floor, Bush House, South East Wing</td>
+          		</tr>
+          		<tr>
+          			<td style="width: 261px;">
+          			<p><strong>Candidates announced and campaigning begins</strong></p>
+          			</td>
+          			<td style="width: 353px;">
+          			<p>Monday 25 February, 10am</p>
+          			</td>
+          		</tr>
+          		<tr>
+          			<td style="width: 261px;">
+          			<p><strong>Voting opens</strong></p>
+          			</td>
+          			<td style="width: 353px;">
+          			<p>Monday 4 March, 10am</p>
+          			</td>
+          		</tr>
+          		<tr>
+          			<td style="width: 261px;">
+          			<p><strong>Voting closes</strong></p>
+          			</td>
+          			<td style="width: 353px;">
+          			<p>Thursday 7 March, 5pm</p>
+          			</td>
+          		</tr>
+          	</tbody>
+          </table>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="./resources/js/index.js"></script>
+<script type="text/javascript" src="./resources/js/tabs.js"></script>
+<script type="text/javascript" src="./resources/js/dropdowns.js"></script>
+
+  </body>
+
+
+</html>
