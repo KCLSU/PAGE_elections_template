@@ -41,7 +41,24 @@ border-top: 1px solid #50266a;
 
 .header {
   grid-area: header;
-  background-color: #ec6236;
+  overflow: hidden;
+  object-fit: cover;
+
+}
+
+.header img {
+  width: auto;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+#banner-small {
+  display: none;
+}
+
+#banner-large {
+  display: block;
 }
 
 
@@ -69,7 +86,7 @@ border-top: 1px solid #50266a;
 .tab-button{
   font-size: 1.1em;
   text-align: center;
-  margin: 0.5em;
+  margin: 0.5em 0 0.5em 0.5em;
   cursor: pointer;
   color: black;
   background-color: white;
@@ -97,7 +114,7 @@ transform: scale(1.02);
 .status {
   height: 100%;
   width: auto;
-  padding: 0.8em;
+  padding: 1em;
 }
 
 .status p {
@@ -112,7 +129,7 @@ transform: scale(1.02);
   font-size: 2.4em;
   font-weight: bold;
   text-align: center;
-  padding: 0.5em 0.5em 0 0.5em;
+  padding: 0;
   color: white;
   text-align: center;
 }
@@ -329,6 +346,16 @@ transform: scale(1.02);
   }
 }
 
+@media only screen and (max-width: 1200px){
+  #banner-large {
+    display: none;
+  }
+  #banner-small {
+    display: block;
+  }
+}
+
+
 
 @media only screen and (max-width: 1000px){
   .grid {
@@ -344,6 +371,11 @@ transform: scale(1.02);
       "content"
       "content"
       "content"
+  }
+
+  .header img {
+    max-width: 100%;
+    height: auto;
   }
 
   .mini-tab {
@@ -362,6 +394,7 @@ transform: scale(1.02);
   .position-box {
     margin: 1em 1em;
   }
+
 
 #table table {
     width: auto!important;
