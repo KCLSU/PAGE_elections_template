@@ -88,6 +88,9 @@ border-top: 1px solid #50266a;
 .menu-burger i {
   font-size: 2.5em;
   color: #50266a;
+  background-color: white;
+  padding: 0.2em;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
 }
 
 
@@ -398,7 +401,7 @@ transform: scale(1.02);
     display: none;
   }
 #count-message {
-  font-size:1.4em;
+  font-size:2em;
 }
 #countdown {
   font-size: 1.8em;
