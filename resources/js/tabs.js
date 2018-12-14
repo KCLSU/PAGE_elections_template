@@ -1,7 +1,11 @@
 
 document.getElementById("default-tab").click();
 document.getElementById("default-mini-tab").click();
+document.getElementById('burger-content').style.display = 'none';
 
+function closeBurger(){
+  $('#burger-content').slideUp('slow');
+}
 
 var tabSections = document.querySelectorAll('.tab-section')
 var tabButtons = document.querySelectorAll('.tab-button')
@@ -24,6 +28,7 @@ function openTab(event, id){
   targetSection.style.display = 'block';
 
   event.target.classList.add('active');
+  closeBurger();
 }
 
 

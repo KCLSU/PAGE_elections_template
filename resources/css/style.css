@@ -95,6 +95,7 @@ border-top: 1px solid #50266a;
   display: flex;
   flex-direction: column;
 }
+
 .tab-button{
   font-size: 1.1em;
   text-align: center;
@@ -138,7 +139,7 @@ transform: scale(1.02);
 
 #count-message {
   display: block;
-  font-size: 2.4em;
+  font-size: 2.6em;
   font-weight: bold;
   text-align: center;
   padding: 0;
@@ -374,7 +375,7 @@ transform: scale(1.02);
     margin-top: 5em;
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 200px 1fr; */
+    grid-template-rows: none;
     grid-template-areas:
       "status"
       "header"
@@ -393,6 +394,22 @@ transform: scale(1.02);
   .menu-burger {
     display: flex;
   }
+#desktop-menu {
+    display: none;
+  }
+#count-message {
+  font-size:1.4em;
+}
+#countdown {
+  font-size: 1.8em;
+}
+.status {
+    height: auto;
+  }
+
+  .content-card {
+    margin-top: 0;
+  }
   .mini-tab {
     padding: 0.3em;
     font-size: 1em;
@@ -403,6 +420,9 @@ transform: scale(1.02);
     margin: 0.3em;
   }
 
+ .col-reverse {
+   flex-direction: column-reverse;
+ }
   .tab-section .tab-section-header h3 {
     display:none;
   }

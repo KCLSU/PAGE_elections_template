@@ -8,4 +8,6 @@ export function closeBurger(){
   $('.links-container').slideUp();
 }
 
-closeBurger();
+// document.getElementById('burger-content').style.display = 'none'
+
+// closeBurger();

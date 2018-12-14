@@ -145,6 +145,14 @@
     <div class="menu-burger flex-center-center">
       <i onclick="burgerMenu('#burger-content')"class="fas fa-bars"></i>
     </div>
+    <div class="links-container" id="desktop-menu">
+      <a class="tab-button" id="default-tab" onclick="openTab(event, 'about')"> About Elections </a>
+      <a class="tab-button" onclick="openTab(event, 'positions')"> The Positions </a>
+      <a class="tab-button heartbeat" id="nominate" onclick="openTab(event, 'action')"> Nominate Yourself </a>
+      <a class="tab-button" onclick="openTab(event, 'useful')"> Useful Links </a>
+      <a class="tab-button" onclick="openTab(event, 'complaints')"> Complaints and Contact Us</a>
+      <a class="tab-button" onclick="openTab(event, 'timeline')"> Timeline</a>
+    </div>
     <div class="links-container" id="burger-content">
       <a class="tab-button" id="default-tab" onclick="openTab(event, 'about')"> About Elections </a>
       <a class="tab-button" onclick="openTab(event, 'positions')"> The Positions </a>
@@ -164,7 +172,7 @@
           <hr />
           <h3> About </h3>
         </div>
-        <div class="flex-center-center">
+        <div class="flex-center-center col-reverse">
           <div class="text-container">
             <h1>Spring Elections 2019 </h1>
             <p> KCLSU is a democratic charity led by students. Our elected student leaders work to ensure a wide cross-section of views are represented in decision making within the Union and at King’s and help to unite the various student communities around common causes.</p>
