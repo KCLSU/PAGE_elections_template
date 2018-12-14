@@ -134,14 +134,18 @@
     <img id="banner-large" src="./resources/images/v5.jpg"></img>
     <img id="banner-small" src="./resources/images/v6.jpg"></img>
   </div>
+<!-- COUNTDOWN CLOCK -->
   <div class="status">
-      <span id="count-message">Nominations close in: </span>
+      <span id="count-message">Nominations OPEN in </span>
       <p id="countdown"></p>
       <p>See the timeline </p>
   </div>
-
-  <div class="links">
-    <div class="links-container">
+<!-- LINKS AND BURGER MENU -->
+  <div class="side-nav">
+    <div class="menu-burger flex-center-center">
+      <i onclick="burgerMenu('#burger-content')"class="fas fa-bars"></i>
+    </div>
+    <div class="links-container" id="burger-content">
       <a class="tab-button" id="default-tab" onclick="openTab(event, 'about')"> About Elections </a>
       <a class="tab-button" onclick="openTab(event, 'positions')"> The Positions </a>
       <a class="tab-button heartbeat" id="nominate" onclick="openTab(event, 'action')"> Nominate Yourself </a>
@@ -570,13 +574,15 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="./resources/js/index.js"></script>
-<script type="text/javascript" src="./resources/js/tabs.js"></script>
-<script type="text/javascript" src="./resources/js/dropdowns.js"></script>
-<script type="text/javascript" src="./resources/js/countDownClock.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./resources/js/index.js"></script>
+  <script type="text/javascript" src="./resources/js/tabs.js"></script>
+  <script type="text/javascript" src="./resources/js/dropdowns.js"></script>
+  <script type="text/javascript" src="./resources/js/countDownClock.js"></script>
+  <script type="text/javascript" src="./resources/js/burgerMenu.js"></script>
+  <script type="module" src="./resources/js/electionsFunctions.js"></script>
 
-  </body>
+</body>
 
 
 </html>

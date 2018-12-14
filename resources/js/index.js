@@ -14,12 +14,6 @@ function setSectionHeight(){
 
 // setSectionHeight();
 
-3
-
-
-
-
-
 
 
 });

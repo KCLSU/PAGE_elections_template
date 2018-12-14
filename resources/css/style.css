@@ -30,12 +30,12 @@ border-top: 1px solid #50266a;
   grid-template-rows: 200px 1fr;
   grid-template-areas:
     "status header"
-    "links content"
-    "links content"
-    "links content"
-    "links content"
-    "links content"
-    "links content"
+    "side-nav content"
+    "side-nav content"
+    "side-nav content"
+    "side-nav content"
+    "side-nav content"
+    "side-nav content"
 }
 
 
@@ -68,8 +68,8 @@ border-top: 1px solid #50266a;
   /* background-color: white; */
 }
 
-.links {
-  grid-area: links;
+.side-nav {
+  grid-area: side-nav;
 }
 
 .status {
@@ -78,6 +78,18 @@ border-top: 1px solid #50266a;
 }
 
 /* LINK BUTTONS */
+
+
+.menu-burger{
+  display: none;
+  height: 6em;
+}
+
+.menu-burger i {
+  font-size: 2.5em;
+  color: #50266a;
+}
+
 
 .links-container {
   display: flex;
@@ -366,7 +378,7 @@ transform: scale(1.02);
     grid-template-areas:
       "status"
       "header"
-      "links"
+      "side-nav"
       "content"
       "content"
       "content"
@@ -378,6 +390,9 @@ transform: scale(1.02);
     height: auto;
   }
 
+  .menu-burger {
+    display: flex;
+  }
   .mini-tab {
     padding: 0.3em;
     font-size: 1em;
