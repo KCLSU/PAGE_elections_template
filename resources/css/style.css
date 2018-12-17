@@ -14,6 +14,7 @@ body {
   flex-wrap: wrap;
 }
 
+
 hr {
   width: 100%;
   margin-top: 12px;
@@ -43,12 +44,13 @@ border-top: 1px solid #50266a;
   grid-area: header;
   overflow: hidden;
   object-fit: cover;
+  background-color: #ec6236;
 
 }
 
 .header img {
-  width: auto;
-  height: 100%;
+  width: 15em;
+  margin: 1em;
   display: block;
   overflow: hidden;
 }
@@ -374,7 +376,11 @@ transform: scale(1.02);
   }
 }
 
-
+@media only screen and (min-width: 1800px){
+.header img {
+  margin: 1em 4em;
+}
+}
 
 @media only screen and (max-width: 1000px){
   .grid {
@@ -393,9 +399,8 @@ transform: scale(1.02);
   }
 
   .header img {
-    max-width: 100%;
-    height: auto;
-  }
+      width: 13em;
+    }
 
   .menu-burger {
     display: flex;
@@ -462,6 +467,11 @@ transform: scale(1.02);
 
 .groups-pics {
   display:none;
+}
+
+.header img {
+  margin: 1em;
+  width: 6em;
 }
 
 .position-box {
