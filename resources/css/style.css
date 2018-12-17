@@ -440,8 +440,9 @@ transform: scale(1.02);
   }
 
   .mobile-all-positions i {
-    font-size: 1.2em;
+    font-size: 1.7em;
     color: purple;
+    margin: 0.5em;
   }
 
 #table table {
