@@ -131,9 +131,9 @@
 
 <div class="grid">
   <div class="header flex-between-center">
-    <img class="dc-image" src="./resources/images/shapeUnion.png"></img>
-    <img  class="dc-image"src="./resources/images/shapes.png"></img>
-    <img class="dc-image" src="./resources/images/springElections.png"></img>
+    <img class="dc-image" src="/pageassets/elections/shapeUnion.png"></img>
+    <img  class="dc-image"src="/pageassets/elections/shapes.png"></img>
+    <img class="dc-image" src="/pageassets/elections/springElections.png"></img>
     <!-- <img id="banner-large" src="./resources/images/designed-big.png"></img>
     <img id="banner-small" src="./resources/images/designed-small.png"></img> -->
   </div>
@@ -145,8 +145,8 @@
   </div>
 <!-- LINKS AND BURGER MENU -->
   <div class="side-nav">
-    <div class="menu-burger flex-center-center">
-      <i onclick="burgerMenu('#burger-content')"class="fas fa-bars"></i>
+    <div onclick="burgerMenu('#burger-content')" class="menu-burger flex-center-center">
+      <i class="fas fa-bars"></i>
     </div>
     <div class="links-container" id="desktop-menu">
       <a class="tab-button" id="default-tab" onclick="openTab(event, 'about')"> About Elections </a>
@@ -179,16 +179,16 @@
           <div class="text-container">
             <h1>Spring Elections 2019 </h1>
             <p> KCLSU is a democratic charity led by students. Our elected student leaders work to ensure a wide cross-section of views are represented in decision making within the Union and at King’s and help to unite the various student communities around common causes.</p>
-            <p>The Spring Elections sees King’s students stand and vote for the Student Officer, Association Officer, NUS Delegate and Academic Rep positions. These leaders work within their respective roles, groups and as a collective to make a real impact on their communities.</p>
+            <p>The Spring Elections sees King’s students stand and vote for the Student Officer, Network Officer, NUS Delegate and Academic Rep positions. These leaders work within their respective roles, groups and as a collective to make a real impact on their communities.</p>
           </div>
           <div class="image-container">
-            <img class="dc-image" src="./resources/images/elections.jpg">
+            <img class="dc-image" src="/pageassets/elections/elections.jpg">
           </div>
       </div>
       <div class="groups-pics flex-center-center">
-        <img class="dc-image" src="./resources/images/mock1.jpg">
-        <img class="dc-image" src="./resources/images/mock2.jpg">
-        <img class="dc-image" src="./resources/images/mock3.jpg">
+        <img class="dc-image" src="/pageassets/elections/elections2.png">
+        <img class="dc-image" src="/pageassets/elections/elections1.png">
+        <img class="dc-image" src="/pageassets/elections/elections3.png">
       </div>
     </div>
 
@@ -197,11 +197,11 @@
       <div id="positions" class="tab-section">
         <div class="flex-between-center tab-section-header">
           <div class="flex-center-center">
-            <span class="tab-button mini-tab" onclick="openMiniTab(event, 'default-mini-tab')"> All Positions </span>
-            <span class="tab-button mini-tab" onclick="openMiniTab(event, 'officers')"> Student Officers </span>
-            <span class="tab-button mini-tab" onclick="openMiniTab(event, 'networks')"> Network Officers </span>
-            <span class="tab-button mini-tab" onclick="openMiniTab(event, 'delegates')"> NUS National Conference Delegates</span>
-            <span class="tab-button mini-tab" onclick="openMiniTab(event, 'academic')"> Academic Reps</span>
+            <a class="tab-button mini-tab" onclick="openMiniTab(event, 'default-mini-tab', 'default-mini-tab', 'mini-tab', 'mini-tab-section')"> All Positions </a>
+            <a class="tab-button mini-tab" onclick="openMiniTab(event, 'officers', 'default-mini-tab', 'mini-tab', 'mini-tab-section')"> Student Officers </a>
+            <a class="tab-button mini-tab" onclick="openMiniTab(event, 'networks', 'default-mini-tab', 'mini-tab', 'mini-tab-section')"> Network Officers </a>
+            <a class="tab-button mini-tab" onclick="openMiniTab(event, 'delegates', 'default-mini-tab', 'mini-tab', 'mini-tab-section')"> NUS National Conference Delegates</a>
+            <a class="tab-button mini-tab" onclick="openMiniTab(event, 'academic', 'default-mini-tab', 'mini-tab', 'mini-tab-section')"> Academic Reps</a>
           </div>
           <hr />
           <h3> The Positions </h3>
@@ -212,10 +212,10 @@
             <p> These are the types of student positions available in this year's Spring Elections 2019. </p>
           <!-- STUDENT POSITION BOX BUTTONS -->
             <div class="flex-center-center flex-wrap">
-              <div onclick="openMiniTab(event, 'officers')" class="position-box flex-center-center"> Student Officers</div>
-              <div  onclick="openMiniTab(event, 'networks')" class="position-box flex-center-center"> Network Officers</div>
-              <div onclick="openMiniTab(event, 'delegates')" class="position-box flex-center-center"> NUS National Conference Delegates</div>
-              <div onclick="openMiniTab(event, 'academic')" class="position-box flex-center-center">Academic Reps</div>
+              <div onclick="openMiniTab(event, 'officers', 'default-mini-tab', 'mini-tab', 'mini-tab-section')" class="position-box flex-center-center"> Student Officers</div>
+              <div onclick="openMiniTab(event, 'networks')" class="position-box flex-center-center"> Network Officers</div>
+              <div onclick="openMiniTab(event, 'delegates', 'default-mini-tab', 'mini-tab', 'mini-tab-section')" class="position-box flex-center-center"> NUS National Conference Delegates</div>
+              <div onclick="openMiniTab(event, 'academic', 'default-mini-tab', 'mini-tab', 'mini-tab-section')" class="position-box flex-center-center">Academic Reps</div>
             </div>
         </div>
         <div class="mini-tab-section" id="officers">
@@ -223,6 +223,7 @@
   <!-- STUDENT OFFICERS INFO -->
           <div class="flex-center-center">
             <div class="text-container">
+                    <h2 style="text-align: center"> Student Officers </h2>
               <p>Student Officers lead KCLSU and sit on the KCLSU Board of Trustees, the highest level of decision-making within the Union. The Student Officer roles are full-time, paid positions; applicants who are not currently in their final year will take a sabbatical year.</p>
               <p>Please note that you cannot stand for multiple student officer positions in one election. You can stand for a student officer position and an association officer position, but in the event that you win both, you will have to withdraw from one. </p>
               <p><strong style="color: rgb(80, 38, 105); font-family: bree_serifsemibold; font-size: 24px;"><a id="What you'll do" name="What you'll do"></a>What Student Officers do</strong></p>
@@ -247,7 +248,7 @@
                 </ul>
               </div>
               <div class="button-container flex-column position-button">
-                  <a class="dc-button" href="https://www.nus.org.uk"> More information </a>
+                  <a class="dc-button" href="https://www.kclsu.org/elections/handbooks/"> See the handbook</a>
               </div>
               <div class="mobile-all-positions flex-center-center">
                 <i class="fas fa-arrow-right"></i>
@@ -272,7 +273,7 @@
                 <li>Be a member of the KCLSU Welfare and Inclusion Committee</li>
                 <li>Attend relevant college committees</li>
               </ul>
-              <p>The Mature Students' Officer will lead the Mature Students’ Network and must be a mature student. A mature student is any student who started their first degree over the age of 21.</p>
+
             </div>
             <div class="image-container flex-center-center flex-column">
               <div class="side-info">
@@ -286,7 +287,8 @@
                 </ul>
               </div>
               <div class="button-container flex-column position-button">
-                  <a class="dc-button" href="https://www.nus.org.uk"> More information </a>
+                  <a class="dc-button" href="https://www.kclsu.org/networks/"> More information </a>
+                  <a class="dc-button" href="https://www.kclsu.org/elections/handbooks/"> See the handbook</a>
               </div>
               <div class="mobile-all-positions flex-center-center">
                 <i class="fas fa-arrow-right"></i>
@@ -313,7 +315,7 @@
               	<li>Hear from the NUS Officers about national initiatives and campaigns</li>
               	<li>Update King&rsquo;s communities following the conference</li>
               </ul>
-              <p>There are 6 NUS National Conference Delegate positions available. 3 of these are reserved for candidates who self-define as women, so please be sure to fill in the &#39;Profile&#39; section when nominating yourself.&nbsp;</p>
+              <p>There are 7 NUS National Conference Delegate positions available. 3 of these are reserved for candidates who self-define as women, so please be sure to fill in the &#39;Profile&#39; section when nominating yourself.&nbsp;</p>
 
             </div>
             <div class="image-container flex-center-center flex-column">
@@ -328,10 +330,8 @@
                 </ul>
               </div>
               <div class="button-container flex-column position-button">
-                <a class="dc-button" href="https://www.nus.org.uk"> More information </a>
-                <a class="dc-button" href="https://www.kclsu.org/representingyou/nus/nusconference/">NUS Conference</a>
-                <a class="dc-button" href="https://www.kclsu.org/representingyou/nus/nusconference/">NUS National Conference Delegates</a>
-                <a class="dc-button" href="https://www.kclsu.org/pageassets/elections/handbooks/NUS-delegate-handbook(1).pdf">NUS Delegate Handbook</a>
+                <a class="dc-button" href="/representingyou/nus/delegateinformation/"> More information </a>
+                <a class="dc-button" href="https://www.kclsu.org/elections/handbooks/"> See the handbook</a>
               </div>
               <div class="mobile-all-positions flex-center-center">
                 <i class="fas fa-arrow-right"></i>
@@ -351,51 +351,19 @@
               <!-- ACADEMIC DROP DOWNS -->
 
               <!-- DROP DOWN 0 -->
-              <div class="faq flex-between-center" onclick="openFaq(event, 'departments')">
-                <p class="faq-question"> Departments running elections</p>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="faq-answer" id="departments">
-                <p>The following departments are running elections through KCLSU:&nbsp;</p>
-                <ul>
-                	<li>Arts &amp; Humanities (A&amp;H)</li>
-                	<li>King&#39;s Business School</li>
-                	<li>Institute of Psychiatry,&nbsp;Psychology and Neuroscience (IoPPN)
-                	<ul>
-                		<li>Psychology and Neuroscience of Mental Health (PNoMH)</li>
-                		<li>Applied Neuroscience</li>
-                	</ul>
-                	</li>
-                	<li>Law</li>
-                	<li>Life Sciences &amp; Medicine
-                	<ul>
-                		<li>Bioscience - First Year Reps Only<br />
-                		<strong><em>If you&#39;re in your 2nd, 3rd, 4th year of study or a PG student and would like to be an academic rep please contact sarah.tattam@kcl.ac.uk, (Faculty Student Experience Manager)&nbsp;expressing your interest.</em></strong></li>
-                		<li>
-                		<p>Medical Students&#39; Association (MSA)</p>
-                		</li>
-                	</ul>
-                	</li>
-                	<li>Natural &amp; Mathematical Sciences
-                	<ul>
-                		<li>Informatics</li>
-                	</ul>
-                	</li>
-                	<li>Social Science &amp; Public Policy
-                	<ul>
-                		<li>School of Security Studies</li>
-                		<li>School of Politics &amp; Economics</li>
-                	</ul>
-                	</li>
-                </ul>
-              </div>
 
               <!-- DROP DOWN 1 -->
-              <div class="faq flex-between-center" onclick="openFaq(event, 'academics')">
-                <p class="faq-question"> What Academic Reps do</p>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="faq-answer" id="academics">
+
+
+              <!-- DROP DOWN 2 -->
+
+
+             <!-- DROP DOWN 3 -->
+           </div>
+
+            <div class="image-container flex-center-center flex-column">
+              <div class="side-info">
+                <h3> Quick Facts </h3>
                 <ul>
                 	<li>Engage peers to find out what issues affect them and propose changes to your faculty, department or programme</li>
                 	<li>Build partnerships between students, KCLSU, King&rsquo;s and external bodies with a view to improving the student experience</li>
@@ -404,55 +372,10 @@
                 </ul>
               </div>
 
-              <!-- DROP DOWN 2 -->
-              <div class="faq flex-between-center" onclick="openFaq(event, 'sslc')">
-                <p class="faq-question">What SSLC Chairs do</p>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="faq-answer" id="sslc">
-                <p>Arts and Humanities have student representatives who chair the student-staff liaison committee (SSLC).&nbsp;Student chairs will put together the agenda&nbsp;of the SSLC by collaborating with academic reps and the vice chair, lead the discussions of the meeting and will also work with academic reps to&nbsp;communicate the&nbsp;outcomes from the meetings to students throughout the year:&nbsp;</p>
-                <ul>
-                	<li>
-                	<p>Student Chairs will be supported by an Academic Vice-Chair in all departments.</p>
-                	</li>
-                	<li>
-                	<p>Each departmental SSLC Student Chair will attend the Faculty Student Experience Forum where issues raised at department SSLCs for Faculty level consideration will be discussed.</p>
-                	</li>
-                </ul>
-                <p>For more information on SSLC chairs please see the faculty student voice page&nbsp;<a href="https://www.kcl.ac.uk/artshums/study/handbook/svoice/stureps.aspx">here</a>.</p>
-             </div>
-
-             <!-- DROP DOWN 3 -->
-              <div class="faq flex-between-center" onclick="openFaq(event, 'committee')">
-                <p class="faq-question"> What Committee Reps do</p>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="faq-answer" id="committee">
-                <p>We are also electing student representatives for faculty and college committees. These representatives ensure that students&#39; experiences, issues, solutions and ideas are heard, and help shape the work of the committee.&nbsp;</p>
-                <p>Committee Reps work with academic associations, academic representatives and KCLSU to effectively represent the communities they belong to whilst on the committee.</p>
-                <p>Committee positions you can nominate yourself for include:</p>
-                <ul>
-                	<li>Academic Board</li>
-                	<li>Digital&nbsp;Education Students Committee</li>
-                	<li>Diversity &amp; Inclusion Committee in the Faculty of Arts &amp; Humanities</li>
-                </ul>
-              </div>
-
-            </div>
-            <div class="image-container flex-center-center flex-column">
-              <div class="side-info">
-                <h3> Quick Facts </h3>
-                <ul>
-                	<li>Academic Board</li>
-                	<li>Digital&nbsp;Education Students Committee</li>
-                	<li>Diversity &amp; Inclusion Committee in the Faculty of Arts &amp; Humanities</li>
-                </ul>
-              </div>
-
               <div class="button-container flex-column position-button">
                   <a class="dc-button" href="/representingyou/studentreps"> Learn More </a>
-                  <a class="dc-button" href="/pageassets/elections/handbooks/_Academic-Rep-Handbook-2018-19.pdf"> See the Academic Rep handbook </a>
-                  <a class="dc-button" href="/pageassets/elections/handbooks/_Committee-Reps-Handbook-2018-19.pdf"> See the Committee Rep handbook</a>
+                  <a class="dc-button" href="/pageassets/elections/handbooks"> See the Academic Rep handbook </a>
+                  <a class="dc-button" href="/pageassets/elections/handbooks/"> See the Committee Rep handbook</a>
               </div>
               <div class="mobile-all-positions flex-center-center">
                 <i class="fas fa-arrow-right"></i>
@@ -477,25 +400,65 @@
 
       <div id="useful" class="tab-section">
         <div class="flex-between-center tab-section-header">
-          <div></div>
+          <div class="flex-center-center">
+            <a class="tab-button info-tab" onclick="openMiniTab(event, 'handbooks', 'handbooks', 'info-tab', 'info-section')"> Position Handbooks </a>
+            <a class="tab-button info-tab" onclick="openMiniTab(event, 'candidates', 'handbooks', 'info-tab', 'info-section')"> Useful Information </a>
+            <a class="tab-button info-tab" onclick="openMiniTab(event, 'generalElections', 'handbooks', 'info-tab', 'info-section')"> General Elections </a>
+          </div>
           <hr />
           <h3> Useful Links </h3>
         </div>
-        <div class="flex-center-center flex-column">
-          <h3><a href="/elections/handbooks">Handbooks for each position</a></h3>
-          <p>The&nbsp;handbooks provide&nbsp;useful information&nbsp;about the nominations and elections process, role descriptions, election rules and expenses.&nbsp;</p>
-          <h3><a href="/elections/candidateresources/">Candidate resources</a>&nbsp;</h3>
-          <p>Information and guidance for candidates, as well as the slides and advice from the candidates&#39; briefings.&nbsp;</p>
-          <h3><a href="/elections/eligibilityexplained/">Eligibility terms explained</a>&nbsp;</h3>
-          <p>Some positions might require you to self-define in order to be eligible to stand or vote for them.&nbsp;</p>
-          <h3><a href="/elections/posters">Designated campaign zones&nbsp;</a></h3>
-          <p>Candidates aren&#39;t allowed to put up posters in undesignated KCLSU and King&#39;s spaces. Here you can find the full list of spaces.</p>
-          <h3><a href="/elections/codeofconduct/">Candidates&#39;&nbsp;Code of Conduct</a></h3>
-          <p>Taking part in a KCLSU election means following a code of conduct. Here, you will find the full Code of Conduct</p>
+
+        <div id="candidates" class="flex-center-center flex-column info-section">
+          <h3>Candidate resources</h3>
+          <p>Information and guidance for candidates, as well as the slides and advice from the candidates&#39; briefings. The candidate briefings will be uploaded after they have taken place.&nbsp;</p>
+          <h3><a href="/pageassets/elections/candidateresources/Eligibility-terms-explained.pdf">Eligibility terms explained&nbsp;</a></h3>
+          <p>Some positions might require you to self-define in order to be eligible to stand or vote for them - this is an explanation of the terms used.&nbsp;</p>
+          <h3><a href="/pageassets/elections/candidateresources/Designated-campaigning-zones.pdf">Designated campaigning zones</a>&nbsp;</h3>
+          <p>For information about where candidates are allowed to place campaigning materials around campus.&nbsp;</p>
+          <h3><a href="/pageassets/elections/candidateresources/Campaigning-Tips(1).pdf">Candidate campaign tips</a></h3>
+          <p>For advice and instructions on writing and uploading your manifesto, running your campaign, social media and designing your campaign materials.&nbsp;</p>
+          <h3>Student Officer briefing</h3>
+          <p>For information about the roles, key dates, the elections process, the code of conduct, candidate promotion liberation and support.</p>
+          <h3>NUS Delegate and Network Officer&nbsp;briefing</h3>
+          <p>For information about the roles, elections process, campaigning tips and support.</p>
+      </div>
+
+      <div id="handbooks" class="flex-center-center flex-column info-section">
+        <h3>Spring Election 2019&nbsp;handbooks</h3>
+        <p>Handbooks will be uploaded below in mid-January. They&nbsp;will give you lots of useful information&nbsp;about the nominations and elections process, role descriptions, election rules and expenses. Please feel free to get in touch with&nbsp;<a href="mailto:elections@kclsu.org">elections@kclsu.org</a>&nbsp;if you have any further questions. &nbsp;</p>
+        <ul>
+        	<li>
+        	   <h3>Student Officers&nbsp;</h3>
+        	</li>
+        	<li>
+        	   <h3>Network Officers&nbsp;</h3>
+        	</li>
+        	<li>
+        	   <h3>NUS National Conference Delegates&nbsp;</h3>
+        	</li>
+        	<li>
+        	   <h3>Academic reps</h3>
+        	</li>
+        </ul>
+      </div>
+
+      <div id="generalElections" class="flex-center-center flex-column info-section">
+        <h3>General Elections Information</h3>
+        <h3><a href="/elections/handbooks">Handbooks for each position</a></h3>
+        <p>The&nbsp;handbooks provide&nbsp;useful information&nbsp;about the nominations and elections process, role descriptions, election rules and expenses.&nbsp;</p>
+        <h3><a href="/elections/candidateresources/">Candidate resources</a>&nbsp;</h3>
+        <p>Information and guidance for candidates, as well as the slides and advice from the candidates&#39; briefings.&nbsp;</p>
+        <h3><a href="/elections/eligibilityexplained/">Eligibility terms explained</a>&nbsp;</h3>
+        <p>Some positions might require you to self-define in order to be eligible to stand or vote for them.&nbsp;</p>
+        <h3><a href="/elections/posters">Designated campaign zones&nbsp;</a></h3>
+        <p>Candidates aren&#39;t allowed to put up posters in undesignated KCLSU and King&#39;s spaces. Here you can find the full list of spaces.</p>
+        <h3><a href="/elections/codeofconduct/">Candidates&#39;&nbsp;Code of Conduct</a></h3>
+        <p>Taking part in a KCLSU election means following a code of conduct. Here, you will find the full Code of Conduct</p>
       </div>
     </div>
 
-<!-- COMPLIANTS AND CONTACT -->
+<!-- COMPLAINTS AND CONTACT -->
       <div id="complaints" class="tab-section">
         <div class="flex-between-center tab-section-header">
           <div></div>
