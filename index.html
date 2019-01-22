@@ -152,7 +152,7 @@
       <a class="tab-button" id="default-tab" onclick="openTab(event, 'about')"> About Elections </a>
       <a class="tab-button" onclick="openTab(event, 'positions')"> The Positions </a>
       <a class="tab-button heartbeat" id="nominate" onclick="openTab(event, 'action')"> Nominate Yourself </a>
-      <a class="tab-button" onclick="openTab(event, 'useful')"> Useful Links </a>
+      <a class="tab-button" onclick="openTab(event, 'useful')"> Resources </a>
       <a class="tab-button" onclick="openTab(event, 'complaints')"> Contact Us</a>
       <a class="tab-button" onclick="openTab(event, 'timeline')"> Timeline</a>
     </div>
@@ -160,7 +160,7 @@
       <a class="tab-button" id="default-tab" onclick="openTab(event, 'about')"> About Elections </a>
       <a class="tab-button" onclick="openTab(event, 'positions')"> The Positions </a>
       <a class="tab-button heartbeat" id="nominate" onclick="openTab(event, 'action')"> Nominate Yourself </a>
-      <a class="tab-button" onclick="openTab(event, 'useful')"> Useful Links </a>
+      <a class="tab-button" onclick="openTab(event, 'useful')"> Resources </a>
       <a class="tab-button" onclick="openTab(event, 'complaints')"> Contact Us</a>
       <a class="tab-button" onclick="openTab(event, 'timeline')"> Timeline</a>
     </div>
@@ -213,7 +213,7 @@
           <!-- STUDENT POSITION BOX BUTTONS -->
             <div class="flex-center-center flex-wrap">
               <div onclick="openMiniTab(event, 'officers', 'default-mini-tab', 'mini-tab', 'mini-tab-section')" class="position-box flex-center-center"> Student Officers</div>
-              <div onclick="openMiniTab(event, 'networks')" class="position-box flex-center-center"> Network Officers</div>
+              <div onclick="openMiniTab(event, 'networks', 'default-mini-tab', 'mini-tab', 'mini-tab-section')" class="position-box flex-center-center"> Network Officers</div>
               <div onclick="openMiniTab(event, 'delegates', 'default-mini-tab', 'mini-tab', 'mini-tab-section')" class="position-box flex-center-center"> NUS National Conference Delegates</div>
               <div onclick="openMiniTab(event, 'academic', 'default-mini-tab', 'mini-tab', 'mini-tab-section')" class="position-box flex-center-center">Academic Reps</div>
             </div>
@@ -226,15 +226,6 @@
                     <h2 style="text-align: center"> Student Officers </h2>
               <p>Student Officers lead KCLSU and sit on the KCLSU Board of Trustees, the highest level of decision-making within the Union. The Student Officer roles are full-time, paid positions; applicants who are not currently in their final year will take a sabbatical year.</p>
               <p>Please note that you cannot stand for multiple student officer positions in one election. You can stand for a student officer position and an association officer position, but in the event that you win both, you will have to withdraw from one. </p>
-              <p><strong style="color: rgb(80, 38, 105); font-family: bree_serifsemibold; font-size: 24px;"><a id="What you'll do" name="What you'll do"></a>What Student Officers do</strong></p>
-              <ul>
-                <li>Engage with King&rsquo;s students</li>
-                <li>Build student communities</li>
-                <li>Amplify student voices</li>
-                <li>Empower student-led campaigning</li>
-                <li>Develop a student-led Union</li>
-                <li>Be a <a href="/pageassets/elections/studentofficers/KCLSU-Trustee-Code-of-Conduct.pdf">Trustee </a>of KCLSU</li>
-              </ul>
 
             </div>
             <div class="image-container flex-center-center flex-column">
@@ -248,11 +239,11 @@
                 </ul>
               </div>
               <div class="button-container flex-column position-button">
-                  <a class="dc-button" href="https://www.kclsu.org/elections/handbooks/"> See the handbook</a>
+                  <!-- <a class="dc-button" href="https://www.kclsu.org/elections/handbooks/"> See the handbook</a> -->
               </div>
               <div class="mobile-all-positions flex-center-center">
                 <i class="fas fa-arrow-right"></i>
-                <a onclick="openMiniTab(event, 'default-mini-tab')"> See the other positions </a>
+                <a onclick="openMiniTab(event, 'default-mini-tab', 'default-mini-tab', 'mini-tab', 'mini-tab-section')"> See the other positions </a>
               </div>
             </div>
         </div>
@@ -265,14 +256,6 @@
               <h2 style="text-align: center"> Network Officers </h2>
               <p>KCLSU networks are where we come together to build active and supportive student-led communities, that organise to represent themselves and work together to meet their community’s needs.</p>
               <p>Network officers work with their committees to represent students on a voluntary, part-time basis and collaborate with the college, as well as taking student views to a national level with NUS.</p>
-              <h3>What network officers do</h3>
-              <ul>
-                <li>Build communities</li>
-                <li>Challenge discrimination</li>
-                <li>Promote liberation at King’s</li>
-                <li>Be a member of the KCLSU Welfare and Inclusion Committee</li>
-                <li>Attend relevant college committees</li>
-              </ul>
 
             </div>
             <div class="image-container flex-center-center flex-column">
@@ -288,11 +271,11 @@
               </div>
               <div class="button-container flex-column position-button">
                   <a class="dc-button" href="https://www.kclsu.org/networks/"> More information </a>
-                  <a class="dc-button" href="https://www.kclsu.org/elections/handbooks/"> See the handbook</a>
+                  <!-- <a class="dc-button" href="https://www.kclsu.org/elections/handbooks/"> See the handbook</a> -->
               </div>
               <div class="mobile-all-positions flex-center-center">
                 <i class="fas fa-arrow-right"></i>
-                <a onclick="openMiniTab(event, 'default-mini-tab')"> See the other positions </a>
+                <a onclick="openMiniTab(event, 'default-mini-tab', 'default-mini-tab', 'mini-tab', 'mini-tab-section')"> See the other positions </a>
               </div>
             </div>
         </div>
@@ -306,16 +289,7 @@
               <p>NUS (National Union of Students) is a confederation of student unions in the UK. Being affiliated with NUS means that as a union, we can create policy and campaign on a national level. </p>
               <p>National Conference is the biggest event in the NUS year - every year, around 1000 delegates will attend the event in Brighton.&nbsp;<a href="https://www.kclsu.org/representingyou/nus/">NUS Conferences</a> are the lead decision making bodies of the organisation where delegates representing students from across NUS membership review the work over the last year, decide on priorities and policy for the following year and elect the leadership.</p>
               <p>NUS National Conference Delegates represent King&rsquo;s students at the NUS National Conference and help shape the national conversation.</p>
-              <h3><strong style="color: rgb(80, 38, 105); font-family: bree_serifsemibold; font-size: 24px;"><a id="What you'll do" name="What you'll do"></a>What NUS National Conference Delegates do</strong></h3>
-
-              <ul>
-              	<li>Join the national conversation&nbsp;</li>
-              	<li>Discuss, defend and vote on motions to help decide NUS Policy</li>
-              	<li>Vote for NUS student leadership positions, including full-time NUS Officers</li>
-              	<li>Hear from the NUS Officers about national initiatives and campaigns</li>
-              	<li>Update King&rsquo;s communities following the conference</li>
-              </ul>
-              <p>There are 7 NUS National Conference Delegate positions available. 3 of these are reserved for candidates who self-define as women, so please be sure to fill in the &#39;Profile&#39; section when nominating yourself.&nbsp;</p>
+              <p>There are <span class="dc-purple"> 7 NUS National Conference Delegate positions </span> available. 3 of these are reserved for candidates who self-define as women, so please be sure to fill in the &#39;Profile&#39; section when nominating yourself.&nbsp;</p>
 
             </div>
             <div class="image-container flex-center-center flex-column">
@@ -331,11 +305,11 @@
               </div>
               <div class="button-container flex-column position-button">
                 <a class="dc-button" href="/representingyou/nus/delegateinformation/"> More information </a>
-                <a class="dc-button" href="https://www.kclsu.org/elections/handbooks/"> See the handbook</a>
+                <!-- <a class="dc-button" href="https://www.kclsu.org/elections/handbooks/"> See the handbook</a> -->
               </div>
               <div class="mobile-all-positions flex-center-center">
                 <i class="fas fa-arrow-right"></i>
-                <a onclick="openMiniTab(event, 'default-mini-tab')"> See the other positions </a>
+                <a onclick="openMiniTab(event, 'default-mini-tab', 'default-mini-tab', 'mini-tab', 'mini-tab-section')"> See the other positions </a>
               </div>
             </div>
         </div>
@@ -374,12 +348,12 @@
 
               <div class="button-container flex-column position-button">
                   <a class="dc-button" href="/representingyou/studentreps"> Learn More </a>
-                  <a class="dc-button" href="/pageassets/elections/handbooks"> See the Academic Rep handbook </a>
-                  <a class="dc-button" href="/pageassets/elections/handbooks/"> See the Committee Rep handbook</a>
+                  <!-- <a class="dc-button" href="/pageassets/elections/handbooks"> See the Academic Rep handbook </a>
+                  <a class="dc-button" href="/pageassets/elections/handbooks/"> See the Committee Rep handbook</a> -->
               </div>
               <div class="mobile-all-positions flex-center-center">
                 <i class="fas fa-arrow-right"></i>
-                <a onclick="openMiniTab(event, 'default-mini-tab')"> See the other positions </a>
+                <a onclick="openMiniTab(event, 'default-mini-tab', 'default-mini-tab', 'mini-tab', 'mini-tab-section')"> See the other positions </a>
               </div>
             </div>
         </div>
@@ -394,67 +368,49 @@
           <hr />
           <h3> Nominations</h3>
         </div>
-        <h3> MSL Widget goes here </h3>
+        <h3> More information to come in January </h3>
       </div>
 
 
+<!-- RESOURCES SECTION -->
       <div id="useful" class="tab-section">
         <div class="flex-between-center tab-section-header">
           <div class="flex-center-center">
             <a class="tab-button info-tab" onclick="openMiniTab(event, 'handbooks', 'handbooks', 'info-tab', 'info-section')"> Position Handbooks </a>
-            <a class="tab-button info-tab" onclick="openMiniTab(event, 'candidates', 'handbooks', 'info-tab', 'info-section')"> Useful Information </a>
-            <a class="tab-button info-tab" onclick="openMiniTab(event, 'generalElections', 'handbooks', 'info-tab', 'info-section')"> General Elections </a>
+            <a class="tab-button info-tab" onclick="openMiniTab(event, 'candidates', 'handbooks', 'info-tab', 'info-section')"> Candidate Information </a>
           </div>
           <hr />
           <h3> Useful Links </h3>
         </div>
-
-        <div id="candidates" class="flex-center-center flex-column info-section">
-          <h3>Candidate resources</h3>
-          <p>Information and guidance for candidates, as well as the slides and advice from the candidates&#39; briefings. The candidate briefings will be uploaded after they have taken place.&nbsp;</p>
-          <h3><a href="/pageassets/elections/candidateresources/Eligibility-terms-explained.pdf">Eligibility terms explained&nbsp;</a></h3>
+        <!-- CANDIDATE RESOURCES -->
+        <div id="candidates" class="info-section">
+          <h3 style="text-align: center">Candidate resources</h3>
+          <p style="text-align: center">Information and guidance for candidates, as well as the slides and advice from the candidates&#39; briefings. The candidate briefings will be uploaded after they have taken place.&nbsp;</p>
+          </br>
+          <h4><a href="/pageassets/elections/candidateresources/Eligibility-terms-explained.pdf">Eligibility terms explained&nbsp;</a></h4>
           <p>Some positions might require you to self-define in order to be eligible to stand or vote for them - this is an explanation of the terms used.&nbsp;</p>
-          <h3><a href="/pageassets/elections/candidateresources/Designated-campaigning-zones.pdf">Designated campaigning zones</a>&nbsp;</h3>
+          <h4><a href="/pageassets/elections/candidateresources/Designated-campaigning-zones.pdf">Designated campaigning zones</a>&nbsp;</h4>
           <p>For information about where candidates are allowed to place campaigning materials around campus.&nbsp;</p>
-          <h3><a href="/pageassets/elections/candidateresources/Campaigning-Tips(1).pdf">Candidate campaign tips</a></h3>
+          <h4><a href="/pageassets/elections/candidateresources/Campaigning-Tips(1).pdf">Candidate campaign tips</a></h4>
           <p>For advice and instructions on writing and uploading your manifesto, running your campaign, social media and designing your campaign materials.&nbsp;</p>
-          <h3>Student Officer briefing</h3>
+          <h4>Student Officer briefing</h4>
           <p>For information about the roles, key dates, the elections process, the code of conduct, candidate promotion liberation and support.</p>
-          <h3>NUS Delegate and Network Officer&nbsp;briefing</h3>
+          <h4>NUS Delegate and Network Officer&nbsp;briefing</h4>
           <p>For information about the roles, elections process, campaigning tips and support.</p>
-      </div>
+          <h4><a href="/elections/codeofconduct/">Candidates&#39;&nbsp;Code of Conduct</a></h4>
+          <p>Taking part in a KCLSU election means following a code of conduct. Here, you will find the full Code of Conduct</p>
+        </div>
 
+        <!-- POSITION HANDBOOKS -->
       <div id="handbooks" class="flex-center-center flex-column info-section">
-        <h3>Spring Election 2019&nbsp;handbooks</h3>
-        <p>Handbooks will be uploaded below in mid-January. They&nbsp;will give you lots of useful information&nbsp;about the nominations and elections process, role descriptions, election rules and expenses. Please feel free to get in touch with&nbsp;<a href="mailto:elections@kclsu.org">elections@kclsu.org</a>&nbsp;if you have any further questions. &nbsp;</p>
-        <ul>
-        	<li>
-        	   <h3>Student Officers&nbsp;</h3>
-        	</li>
-        	<li>
-        	   <h3>Network Officers&nbsp;</h3>
-        	</li>
-        	<li>
-        	   <h3>NUS National Conference Delegates&nbsp;</h3>
-        	</li>
-        	<li>
-        	   <h3>Academic reps</h3>
-        	</li>
-        </ul>
-      </div>
-
-      <div id="generalElections" class="flex-center-center flex-column info-section">
-        <h3>General Elections Information</h3>
-        <h3><a href="/elections/handbooks">Handbooks for each position</a></h3>
-        <p>The&nbsp;handbooks provide&nbsp;useful information&nbsp;about the nominations and elections process, role descriptions, election rules and expenses.&nbsp;</p>
-        <h3><a href="/elections/candidateresources/">Candidate resources</a>&nbsp;</h3>
-        <p>Information and guidance for candidates, as well as the slides and advice from the candidates&#39; briefings.&nbsp;</p>
-        <h3><a href="/elections/eligibilityexplained/">Eligibility terms explained</a>&nbsp;</h3>
-        <p>Some positions might require you to self-define in order to be eligible to stand or vote for them.&nbsp;</p>
-        <h3><a href="/elections/posters">Designated campaign zones&nbsp;</a></h3>
-        <p>Candidates aren&#39;t allowed to put up posters in undesignated KCLSU and King&#39;s spaces. Here you can find the full list of spaces.</p>
-        <h3><a href="/elections/codeofconduct/">Candidates&#39;&nbsp;Code of Conduct</a></h3>
-        <p>Taking part in a KCLSU election means following a code of conduct. Here, you will find the full Code of Conduct</p>
+        <h3 style="text-align: center">Spring Election 2019&nbsp;handbooks</h3>
+        <p style="text-align: center">Handbooks will be uploaded below in mid-January. They&nbsp;will give you lots of useful information&nbsp;about the nominations and elections process, role descriptions, election rules and expenses. Please feel free to get in touch with&nbsp;<a href="mailto:elections@kclsu.org">elections@kclsu.org</a>&nbsp;if you have any further questions. &nbsp;</p>
+        <!-- <div class="button-container flex-wrap">
+          <a class="dc-button" href="">Student Officers</a>
+          <a class="dc-button" href="">Network Officers</a>
+          <a class="dc-button" href="">NUS National Conference Delegates</a>
+          <a class="dc-button" href="">Academic reps</a>
+        </div> -->
       </div>
     </div>
 
@@ -545,6 +501,14 @@
           			</td>
           			<td style="width: 353px;">
           			<p>Thursday 7 March, 5pm</p>
+          			</td>
+          		</tr>
+              <tr>
+          			<td style="width: 261px;">
+          			<p><strong>Results Announced</strong></p>
+          			</td>
+          			<td style="width: 353px;">
+          			<p>Friday 8 March, 5pm</p>
           			</td>
           		</tr>
           	</tbody>
