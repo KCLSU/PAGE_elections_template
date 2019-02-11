@@ -8,6 +8,10 @@ $(document).ready(function(){
   let seconds = null;
   let distance = null;
   let message = document.getElementById('count-message');
+  let countDown = document.getElementById('countdown');
+  let timelineLink = document.getElementById('timelineLink');
+
+  timelineLink.style.opacity = 0;
 
 
 function calculateDistance(){
@@ -32,29 +36,38 @@ function startTimer(){
     calculateTimes(calculateDistance())
 
     //WHEN THE COUNTDOWN FINISHES
-    if (distance < 0) {
+    if (distance <= 0) {
+      countDown.innerHTML = '';
+        timelineLink.style.opacity = 0;
       clearInterval(timer1);
       nominationsClose()
     }
 
     //DISPLAY RESULT IN HTML
-    document.getElementById('countdown').innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+    else {
+      countDown.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+        timeline.style.opacity = 1;
+    }
 }, 1000);
 
 function nominationsClose(){
-  message.innerHTML = "Nominations close in"
+  message.innerHTML = "Nominations close in";
   countDownDate = new Date('February 15, 2019, 12:00:00').getTime();
   const timer2 = setInterval(function(){
       console.log("second timer")
       calculateTimes(calculateDistance())
 
       //WHEN THE COUNTDOWN FINISHES
-      if (distance < 0) {
+      if (distance <= 0) {
+        countDown.innerHTML = '';
         clearInterval(timer2);
         candidatesAnnounced()
       }
       //DISPLAY RESULT IN HTML
-      document.getElementById('countdown').innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+      else{
+        countDown.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+        timelineLink.style.opacity = 1;
+      }
   }, 1000);
 }
 
@@ -67,13 +80,18 @@ function candidatesAnnounced(){
     calculateTimes(calculateDistance())
 
     //WHEN THE COUNTDOWN FINISHES
-    if (distance < 0) {
+    if (distance <= 0) {
+      countDown.innerHTML = '';
       clearInterval(timer3);
       votingOpens()
     }
 
     //DISPLAY RESULT IN HTML
-    document.getElementById('countdown').innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+    else{
+      countDown.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+      timelineLink.style.opacity = 1;
+    }
+
     }, 1000);
 
 }
@@ -85,13 +103,16 @@ function votingOpens(){
     calculateTimes(calculateDistance())
       //WHEN THE COUNTDOWN FINISHES
 
-      if (distance < 0) {
+      if (distance <= 0) {
         clearInterval(timer3);
         votingCloses()
       }
 
       //DISPLAY RESULT IN HTML
-      document.getElementById('countdown').innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+      else {
+        countDown.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+        timelineLink.style.opacity = 1;
+      }
   }, 1000);
 }
 
@@ -113,7 +134,10 @@ function votingCloses(){
       }
 
       //DISPLAY RESULT IN HTML
-      document.getElementById('countdown').innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+      else {
+        countDown.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+        timelineLink.style.opacity = 1;
+      }
   }, 1000);
  }
 }
